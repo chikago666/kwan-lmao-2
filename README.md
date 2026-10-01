@@ -24,11 +24,11 @@
 
 ### 👇 👇 👇
 
-[![XEM NGAY](https://img.shields.io/badge/▶️_XEM_NGAY_TẠI_ĐÂY-640x360_·_stream_trực_tiếp-brightgreen?style=for-the-badge&logoColor=white)](https://chikago666.github.io/kwan-lmao-2/)
+[![XEM NGAY](https://img.shields.io/badge/▶️_XEM_NGAY_TẠI_ĐÂY-640x360_·_stream_trực_tiếp-brightgreen?style=for-the-badge&logoColor=white)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html)
 
-**[<img src="assets/thumbnail.jpg" alt="▶ Xem livestream ngay" width="820">](https://chikago666.github.io/kwan-lmao-2/)**
+**[<img src="assets/thumbnail.jpg" alt="▶ Xem livestream ngay" width="820">](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html)**
 
-**[▶️ BẤM VÀO ẢNH ĐỂ XEM TOÀN BỘ LIVESTREAM](https://chikago666.github.io/kwan-lmao-2/)**
+**[▶️ BẤM VÀO ẢNH ĐỂ XEM TOÀN BỘ LIVESTREAM](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html)**
 
 </div>
 
@@ -46,23 +46,23 @@ Bấm **Xem** để mở player tại đúng part đó (chạy trong trình duy�
 
 | # | Trong livestream gốc | Thời lượng | Dung lượng | Xem ngay | File gốc |
 |:-:|:--|:--:|:--:|:--:|:--:|
-| 01 | `0:00:00` → `0:31:49` | 31m49s | 86.9 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=1) | [📂](videos/part-01.mp4) |
-| 02 | `0:31:49` → `0:52:02` | 20m12s | 86.3 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=2) | [📂](videos/part-02.mp4) |
-| 03 | `0:52:02` → `1:17:19` | 25m17s | 86.9 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=3) | [📂](videos/part-03.mp4) |
-| 04 | `1:17:19` → `1:36:52` | 19m32s | 85.6 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=4) | [📂](videos/part-04.mp4) |
-| 05 | `1:36:52` → `1:53:50` | 16m58s | 85.9 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=5) | [📂](videos/part-05.mp4) |
-| 06 | `1:53:50` → `2:16:49` | 22m59s | 86.1 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=6) | [📂](videos/part-06.mp4) |
-| 07 | `2:16:49` → `2:41:11` | 24m21s | 86.7 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=7) | [📂](videos/part-07.mp4) |
-| 08 | `2:41:11` → `3:02:53` | 21m42s | 86.2 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=8) | [📂](videos/part-08.mp4) |
-| 09 | `3:02:53` → `3:22:35` | 19m42s | 86.5 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=9) | [📂](videos/part-09.mp4) |
-| 10 | `3:22:35` → `3:40:24` | 17m48s | 85.6 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=10) | [📂](videos/part-10.mp4) |
-| 11 | `3:40:24` → `3:57:52` | 17m28s | 86.3 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=11) | [📂](videos/part-11.mp4) |
-| 12 | `3:57:52` → `4:27:04` | 29m11s | 86.7 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=12) | [📂](videos/part-12.mp4) |
-| 13 | `4:27:04` → `4:53:43` | 26m39s | 86.1 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=13) | [📂](videos/part-13.mp4) |
-| 14 | `4:53:43` → `5:18:45` | 25m02s | 86.5 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=14) | [📂](videos/part-14.mp4) |
-| 15 | `5:18:45` → `5:37:05` | 18m19s | 86.5 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=15) | [📂](videos/part-15.mp4) |
-| 16 | `5:37:05` → `6:16:37` | 39m32s | 86.7 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=16) | [📂](videos/part-16.mp4) |
-| 17 | `6:16:37` → `6:41:04` | 24m27s | 63.6 MB | [▶ Xem](https://chikago666.github.io/kwan-lmao-2/?part=17) | [📂](videos/part-17.mp4) |
+| 01 | `0:00:00` → `0:31:49` | 31m49s | 86.9 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=1) | [📂](videos/part-01.mp4) |
+| 02 | `0:31:49` → `0:52:02` | 20m12s | 86.3 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=2) | [📂](videos/part-02.mp4) |
+| 03 | `0:52:02` → `1:17:19` | 25m17s | 86.9 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=3) | [📂](videos/part-03.mp4) |
+| 04 | `1:17:19` → `1:36:52` | 19m32s | 85.6 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=4) | [📂](videos/part-04.mp4) |
+| 05 | `1:36:52` → `1:53:50` | 16m58s | 85.9 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=5) | [📂](videos/part-05.mp4) |
+| 06 | `1:53:50` → `2:16:49` | 22m59s | 86.1 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=6) | [📂](videos/part-06.mp4) |
+| 07 | `2:16:49` → `2:41:11` | 24m21s | 86.7 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=7) | [📂](videos/part-07.mp4) |
+| 08 | `2:41:11` → `3:02:53` | 21m42s | 86.2 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=8) | [📂](videos/part-08.mp4) |
+| 09 | `3:02:53` → `3:22:35` | 19m42s | 86.5 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=9) | [📂](videos/part-09.mp4) |
+| 10 | `3:22:35` → `3:40:24` | 17m48s | 85.6 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=10) | [📂](videos/part-10.mp4) |
+| 11 | `3:40:24` → `3:57:52` | 17m28s | 86.3 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=11) | [📂](videos/part-11.mp4) |
+| 12 | `3:57:52` → `4:27:04` | 29m11s | 86.7 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=12) | [📂](videos/part-12.mp4) |
+| 13 | `4:27:04` → `4:53:43` | 26m39s | 86.1 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=13) | [📂](videos/part-13.mp4) |
+| 14 | `4:53:43` → `5:18:45` | 25m02s | 86.5 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=14) | [📂](videos/part-14.mp4) |
+| 15 | `5:18:45` → `5:37:05` | 18m19s | 86.5 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=15) | [📂](videos/part-15.mp4) |
+| 16 | `5:37:05` → `6:16:37` | 39m32s | 86.7 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=16) | [📂](videos/part-16.mp4) |
+| 17 | `6:16:37` → `6:41:04` | 24m27s | 63.6 MB | [▶ Xem](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html?part=17) | [📂](videos/part-17.mp4) |
 
 > Toàn bộ video cũng được lưu tại **[Release v1.0.0](https://github.com/chikago666/kwan-lmao-2/releases/tag/v1.0.0)** — tải nhanh từng part hoặc cả zip.
 
@@ -110,7 +110,7 @@ GitHub giới hạn **mỗi file tối đa 100 MB** đối với repo thường.
 <details>
 <summary><b>Xem có mượt không? Có cần tải về không?</b></summary>
 
-Hoàn toàn KHÔNG cần tải về. Bấm [▶ XEM NGAY](https://chikago666.github.io/kwan-lmao-2/) là video chạy ngay. Các file đã được tối ưu `faststart` nên video bắt đầu phát gần như tức thì, tua qua lại cũng mượt. Player **tự chuyển part** liên tục nên bạn cứ để đó xem như một video dài duy nhất.
+Hoàn toàn KHÔNG cần tải về. Bấm [▶ XEM NGAY](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/docs/index.html) là video chạy ngay. Các file đã được tối ưu `faststart` nên video bắt đầu phát gần như tức thì, tua qua lại cũng mượt. Player **tự chuyển part** liên tục nên bạn cứ để đó xem như một video dài duy nhất.
 
 </details>
 
@@ -124,9 +124,10 @@ Có 2 cách:
 </details>
 
 <details>
-<summary><b>Link player bị lỗi 404?</b></summary>
+<summary><b>Muốn player chạy trên URL chính chủ của GitHub Pages?</b></summary>
 
-GitHub Pages cần vài phút để deploy lần đầu (workflow `.github/workflows/deploy-pages.yml` chạy tự động). Vào tab **Actions** của repo xem tiến trình, hoặc chờ ~2-3 phút rồi tải lại trang.
+Player hiện chạy qua dịch vụ preview `htmlpreview.github.io` — ổn định và không cần cấu hình gì.
+Nếu muốn URL chính chủ `https://chikago666.github.io/kwan-lmao-2/` (đẹp hơn, không phụ thuộc dịch vụ ngoài), làm theo hướng dẫn **2 bước ~1 phút** trong file [`docs/enable-github-pages.md`](docs/enable-github-pages.md).
 
 </details>
 

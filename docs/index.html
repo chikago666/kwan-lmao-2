@@ -448,7 +448,6 @@ function switchTo(n, andPlay, restoreTime) {
   video.addEventListener('loadedmetadata', onMeta);
   if (andPlay) video.play().catch(() => {});
   saveProgress();
-  history.replaceState(null, '', `?part=${n}`);
 }
 
 /* ================== NEXT OVERLAY ================== */
@@ -538,8 +537,8 @@ function toast(msg) {
 
 /* ================== INIT ================== */
 (function init() {
-  const params = new URLSearchParams(location.search);
-  let startPart = parseInt(params.get('part')) || parseInt((location.hash.match(/part-(\d+)/) || [])[1]) || loadProgress().lastPart || 1;
+  const m = (location.href + location.hash).match(/part[=-](\d+)/i);
+  let startPart = parseInt(m && m[1]) || loadProgress().lastPart || 1;
   if (startPart < 1 || startPart > PARTS.length) startPart = 1;
   switchTo(startPart, false);
   updateTimeline();
