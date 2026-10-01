@@ -23,9 +23,9 @@
 
 ### 🎥 PART 1/17 — Bắt đầu tại đây
 
-[▶️ BẤM VÀO ĐÂY ĐỂ XEM PART 1](videos/part-01.mp4)
+<video controls muted playsinline width="100%" poster="assets/thumbnail.jpg" src="videos/part-01.mp4"></video>
 
-*Player video sẽ hiện ngay bên dưới — chỉ cần bấm nút ▶ play!*
+*👆 Bấm nút ▶ play ở giữa là xem được ngay — không cần tải về!*
 
 ---
 
