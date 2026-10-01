@@ -23,7 +23,9 @@
 
 ### 🎥 PART 1/17 — Bắt đầu tại đây
 
-<video controls muted playsinline width="100%" poster="assets/thumbnail.jpg" src="videos/part-01.mp4"></video>
+https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/videos/part-01.mp4
+
+[▶️ Link dạng 2: raw URL trong markdown link](https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/videos/part-01.mp4)
 
 *👆 Bấm nút ▶ play ở giữa là xem được ngay — không cần tải về!*
 
