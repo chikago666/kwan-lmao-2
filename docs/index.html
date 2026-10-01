@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>▶ LIVE FULL CANTO 10 PART 3 — Kwan · Limbus Company</title>
+<meta name="description" content="Xem lại toàn bộ livestream LIVE FULL CANTO 10 PART 3 LET'S GOOOOOO LIMBUSSYYY của kênh Kwan — 6h41m, 17 parts, xem trực tiếp không cần tải về.">
+<style>
+:root {
+  --bg: #0c0e11;
+  --panel: #15181d;
+  --panel2: #1b1f26;
+  --border: #2a2f38;
+  --accent: #ffb02e;
+  --accent2: #ffd166;
+  --text: #eceae6;
+  --muted: #9aa1ab;
+  --ok: #4ade80;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: 1100px; margin: 0 auto; padding: 16px; }
+
+/* ============ HEADER ============ */
+header {
+  background: linear-gradient(180deg, #12151a 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0 14px;
+}
+.header-inner {
+  max-width: 1100px; margin: 0 auto; padding: 0 16px;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+}
+.logo {
+  font-size: 26px; line-height: 1;
+  filter: drop-shadow(0 0 12px rgba(255,176,46,.35));
+}
+.title-block { flex: 1; min-width: 260px; }
+.title-block h1 {
+  font-size: clamp(16px, 2.4vw, 22px);
+  font-weight: 800; letter-spacing: .2px; line-height: 1.25;
+}
+.title-block h1 .accent { color: var(--accent); }
+.subtitle {
+  color: var(--muted); font-size: 13px; margin-top: 3px;
+  display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+}
+.subtitle .dot { opacity: .4; }
+.repo-link {
+  font-size: 12px; border: 1px solid var(--border); border-radius: 999px;
+  padding: 4px 12px; color: var(--muted); white-space: nowrap;
+  transition: all .15s;
+}
+.repo-link:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+/* ============ PLAYER ============ */
+.player-zone { margin-top: 18px; }
+.stage {
+  position: relative; background: #000; border-radius: 14px; overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0,0,0,.55);
+}
+video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+.stage.dead video { filter: grayscale(.6) brightness(.5); }
+
+/* next-part countdown overlay */
+.next-overlay {
+  position: absolute; inset: 0; display: none;
+  background: rgba(5,6,8,.82); backdrop-filter: blur(4px);
+  align-items: center; justify-content: center; flex-direction: column; gap: 14px;
+  text-align: center; padding: 20px;
+}
+.next-overlay.show { display: flex; }
+.next-overlay .lbl { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 2px; }
+.next-overlay .next-name { font-size: clamp(18px, 3vw, 26px); font-weight: 800; }
+.next-overlay .next-name b { color: var(--accent); }
+.next-overlay .row { display: flex; gap: 10px; }
+.btn {
+  border: 1px solid var(--border); background: var(--panel2); color: var(--text);
+  padding: 10px 18px; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 600;
+  transition: all .15s; display: inline-flex; align-items: center; gap: 8px;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn.primary {
+  background: var(--accent); border-color: var(--accent); color: #1a1407;
+}
+.btn.primary:hover { background: var(--accent2); color: #1a1407; }
+.btn:disabled { opacity: .35; cursor: not-allowed; }
+
+/* ============ CONTROL BAR ============ */
+.controls {
+  margin-top: 12px; display: flex; flex-direction: column; gap: 10px;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 14px; padding: 14px 16px;
+}
+.now-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+.now-playing { display: flex; align-items: baseline; gap: 10px; min-width: 0; }
+.part-chip {
+  background: var(--accent); color: #1a1407; font-weight: 800; font-size: 13px;
+  padding: 3px 10px; border-radius: 7px; white-space: nowrap;
+}
+.now-title { font-weight: 700; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.time-range { color: var(--muted); font-size: 12.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.nav-btns { display: flex; gap: 8px; }
+
+/* global timeline of the whole stream */
+.global-timeline {
+  padding: 6px 2px 10px;
+}
+.global-bar {
+  position: relative; height: 14px; border-radius: 999px;
+  background: var(--panel2); border: 1px solid var(--border);
+  cursor: pointer; display: flex; align-items: stretch; overflow: hidden;
+}
+.seg { flex-grow: 1; border-right: 2px solid var(--bg); position: relative; }
+.seg:last-child { border-right: none; }
+.seg .fill {
+  position: absolute; inset: 0; width: 0%;
+  background: linear-gradient(180deg, var(--accent2), var(--accent));
+  transition: width .25s;
+}
+.seg.done .fill { width: 100%; }
+.global-bar .cursor {
+  position: absolute; top: -4px; bottom: -4px; width: 4px; border-radius: 3px;
+  background: #fff; box-shadow: 0 0 8px rgba(255,255,255,.8);
+  transition: left .25s; pointer-events: none; z-index: 2;
+}
+.tl-labels {
+  display: flex; justify-content: space-between; color: var(--muted);
+  font-size: 11px; margin-top: 5px; font-variant-numeric: tabular-nums;
+}
+
+/* ============ PARTS RAIL ============ */
+.parts-zone { margin-top: 18px; }
+.parts-title {
+  font-size: 14px; font-weight: 700; letter-spacing: .4px; text-transform: uppercase;
+  color: var(--muted); display: flex; align-items: center; gap: 8px; margin-bottom: 10px;
+}
+.parts-title .count { color: var(--accent); }
+.parts-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 8px;
+}
+.pcard {
+  position: relative; display: block; text-align: left; cursor: pointer;
+  background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+  padding: 10px 12px; color: var(--text); transition: all .13s; overflow: hidden;
+  font-family: inherit;
+}
+.pcard:hover { border-color: var(--accent); transform: translateY(-1px); text-decoration: none; }
+.pcard .num { font-size: 12px; color: var(--muted); font-weight: 700; display: flex; justify-content: space-between; }
+.pcard .num .watched { color: var(--ok); }
+.pcard .nm { font-size: 13.5px; font-weight: 700; margin-top: 3px; }
+.pcard .meta { font-size: 11.5px; color: var(--muted); margin-top: 3px; font-variant-numeric: tabular-nums; }
+.pcard.active {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, rgba(255,176,46,.16), rgba(255,176,46,.05));
+  box-shadow: 0 0 0 1px var(--accent) inset;
+}
+.pcard.active .num { color: var(--accent); }
+.pcard .playicon {
+  position: absolute; right: 10px; top: 8px; opacity: 0; transition: opacity .13s;
+  color: var(--accent); font-size: 14px;
+}
+.pcard:hover .playicon, .pcard.active .playicon { opacity: 1; }
+
+/* ============ INFO ============ */
+.info-zone {
+  margin-top: 26px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;
+}
+.card {
+  background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px;
+}
+.card h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .5px; color: var(--accent); margin-bottom: 10px; }
+.card table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.card td { padding: 5px 0; vertical-align: top; }
+.card td:first-child { color: var(--muted); width: 110px; }
+.card ul { list-style: none; font-size: 13.5px; }
+.card ul li { padding: 4px 0 4px 18px; position: relative; color: var(--muted); }
+.card ul li b { color: var(--text); }
+.card ul li::before { content: '›'; position: absolute; left: 2px; color: var(--accent); font-weight: 800; }
+kbd {
+  background: var(--panel2); border: 1px solid var(--border); border-bottom-width: 2px;
+  border-radius: 5px; padding: 1px 6px; font-size: 11.5px; font-family: inherit;
+}
+
+/* toast */
+#toast {
+  position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%) translateY(20px);
+  background: var(--panel2); border: 1px solid var(--accent); color: var(--text);
+  padding: 10px 18px; border-radius: 12px; font-size: 13.5px; font-weight: 600;
+  opacity: 0; pointer-events: none; transition: all .25s; z-index: 99;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5); max-width: 90vw; text-align: center;
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* loading spinner */
+.stage .spinner {
+  position: absolute; top: 50%; left: 50%; width: 46px; height: 46px; margin: -23px 0 0 -23px;
+  border: 4px solid rgba(255,176,46,.2); border-top-color: var(--accent);
+  border-radius: 50%; animation: spin 1s linear infinite; display: none; pointer-events: none;
+}
+.stage.buffering .spinner { display: block; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+footer {
+  margin-top: 30px; padding: 20px 16px 26px; border-top: 1px solid var(--border);
+  text-align: center; color: var(--muted); font-size: 12.5px; line-height: 1.8;
+}
+footer b { color: var(--text); }
+
+@media (max-width: 640px) {
+  .parts-grid { grid-template-columns: repeat(auto-fill, minmax(124px, 1fr)); }
+  .nav-btns .btn span.txt { display: none; }
+  .global-bar { height: 12px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">🎬</div>
+    <div class="title-block">
+      <h1>LIVE FULL CANTO 10 PART 3 <span class="accent">LET'S GOOOOOO</span> LIMBUSSYYY</h1>
+      <div class="subtitle">
+        <span>👤 Kênh <b>Kwan</b></span><span class="dot">·</span>
+        <span>🎮 Limbus Company — Canto X</span><span class="dot">·</span>
+        <span>⏱ 6h 41m</span><span class="dot">·</span>
+        <span>📦 17 parts</span><span class="dot">·</span>
+        <span>📅 01/10/2026</span>
+      </div>
+    </div>
+    <a class="repo-link" href="https://github.com/chikago666/kwan-lmao-2" target="_blank" rel="noopener">📂 GitHub Repo</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="player-zone">
+    <div class="stage" id="stage">
+      <video id="video" controls playsinline preload="metadata"
+             poster="https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/assets/thumbnail.jpg"></video>
+      <div class="spinner"></div>
+      <div class="next-overlay" id="nextOverlay">
+        <div class="lbl">Part tiếp theo</div>
+        <div class="next-name">Part <b id="nextNum"></b></div>
+        <div class="row">
+          <button class="btn primary" id="goNextBtn">▶ Tự chuyển sau <span id="cd">5</span>s</button>
+          <button class="btn" id="stayBtn">⏸ Ở lại part này</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="now-row">
+        <div class="now-playing">
+          <span class="part-chip" id="chipNow">PART 1/17</span>
+          <span class="now-title" id="nowTitle">Canto 10 — Canto X</span>
+        </div>
+        <span class="time-range" id="timeRange">0:00:00 → 0:31:49 trong livestream</span>
+        <div class="nav-btns">
+          <button class="btn" id="prevBtn" title="Part trước (phím P)">⏮ <span class="txt">Trước</span></button>
+          <button class="btn" id="nextBtn" title="Part sau (phím N)">Sau <span class="txt">⏭</span></button>
+        </div>
+      </div>
+      <div class="global-timeline">
+        <div class="global-bar" id="globalBar" title="Vị trí trong toàn bộ livestream — bấm để nhảy part"></div>
+        <div class="tl-labels"><span>0:00</span><span>1:40</span><span>3:20</span><span>5:00</span><span>6:41</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parts-zone">
+    <div class="parts-title">📺 Playlist — chọn part <span class="count">(17 parts · 6h 41m)</span></div>
+    <div class="parts-grid" id="partsGrid"></div>
+  </div>
+
+  <div class="info-zone">
+    <div class="card">
+      <h3>ℹ️ Thông tin</h3>
+      <table>
+        <tr><td>Tiêu đề</td><td>LIVE FULL CANTO 10 PART 3 LET'S GOOOOOO LIMBUSSYYY</td></tr>
+        <tr><td>Kênh</td><td>Kwan (justkwanthings)</td></tr>
+        <tr><td>Game</td><td>Limbus Company — Canto X (Part 3)</td></tr>
+        <tr><td>Thời lượng</td><td>6h 41m 04s</td></tr>
+        <tr><td>Chất lượng</td><td>360p · H.264 · 30fps</td></tr>
+        <tr><td>Nguồn</td><td><a href="https://www.youtube.com/live/bHLdm2GD3AY" target="_blank" rel="noopener">YouTube gốc ↗</a></td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3>⌨️ Phím tắt</h3>
+      <ul>
+        <li><kbd>Space</kbd> / <kbd>K</kbd> — Play / Pause</li>
+        <li><kbd>←</kbd> <kbd>→</kbd> — Lùi / Tới 10 giây</li>
+        <li><kbd>J</kbd> / <kbd>L</kbd> — Lùi / Tới 30 giây</li>
+        <li><kbd>N</kbd> — Part tiếp theo · <kbd>P</kbd> — Part trước</li>
+        <li><kbd>F</kbd> — Toàn màn hình</li>
+        <li><kbd>M</kbd> — Tắt / bật tiếng</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>💡 Mẹo</h3>
+      <ul>
+        <li><b>Tự động chuyển part</b> — hết part này sẽ tự sang part tiếp</li>
+        <li><b>Nhớ vị trí xem</b> — quay lại sau, player tự tới chỗ bạn dừng</li>
+        <li><b>Thanh vàng phía trên</b> — tiến độ của cả livestream 6h41m</li>
+        <li><b>Chia sẻ part</b> — copy URL có sẵn <b>?part=N</b> để gửi cho bạn bè</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <b>🎬 LIVE FULL CANTO 10 PART 3 LET'S GOOOOOO LIMBUSSYYY</b> · Kênh Kwan<br>
+  Repo lưu trữ: <a href="https://github.com/chikago666/kwan-lmao-2" target="_blank" rel="noopener">chikago666/kwan-lmao-2</a> ·
+  Video gốc thuộc bản quyền của kênh <b>Kwan</b> — trang này chỉ nhằm lưu trữ &amp; xem lại.<br>
+  Powered by GitHub Pages · stream trực tiếp từ repo, không cần tải về 🚀
+</footer>
+
+<div id="toast"></div>
+
+<script>
+/* ================== DATA ================== */
+const TOTAL_STREAM = 24064.4; // giây — tổng thời lượng livestream gốc
+
+const PARTS = [
+  {n:1,  dur:1909.8}, {n:2,  dur:1212.7}, {n:3,  dur:1517.1}, {n:4,  dur:1172.7},
+  {n:5,  dur:1018.2}, {n:6,  dur:1379.4}, {n:7,  dur:1461.7}, {n:8,  dur:1302.3},
+  {n:9,  dur:1182.0}, {n:10, dur:1068.7}, {n:11, dur:1048.3}, {n:12, dur:1751.7},
+  {n:13, dur:1599.2}, {n:14, dur:1502.0}, {n:15, dur:1099.2}, {n:16, dur:2372.2},
+  {n:17, dur:1467.2}
+];
+// tính thời điểm bắt đầu mỗi part trong stream gốc
+let acc = 0;
+PARTS.forEach(p => { p.start = acc; acc += p.dur; });
+
+const RAW = n => `https://raw.githubusercontent.com/chikago666/kwan-lmao-2/main/videos/part-${String(n).padStart(2,'0')}.mp4`;
+const REL = n => `https://github.com/chikago666/kwan-lmao-2/releases/download/v1.0.0/part-${String(n).padStart(2,'0')}.mp4`;
+
+/* ================== STATE ================== */
+const video = document.getElementById('video');
+const stage = document.getElementById('stage');
+let current = 1;
+let countdownTimer = null;
+const LS_KEY = 'kwan-lmao-2-progress-v1';
+
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem(LS_KEY)) || {}; } catch { return {}; }
+}
+function saveProgress() {
+  try {
+    const p = loadProgress();
+    p.lastPart = current;
+    p['t' + current] = Math.floor(video.currentTime || 0);
+    localStorage.setItem(LS_KEY, JSON.stringify(p));
+  } catch {}
+}
+
+/* ================== FORMAT ================== */
+function fmtHMS(s) {
+  s = Math.max(0, Math.floor(s));
+  const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), x = s % 60;
+  return h > 0 ? `${h}:${String(m).padStart(2,'0')}:${String(x).padStart(2,'0')}`
+               : `${m}:${String(x).padStart(2,'0')}`;
+}
+function fmtDur(s) {
+  const m = Math.round(s / 60);
+  return m >= 60 ? `${Math.floor(m/60)}h${String(m%60).padStart(2,'0')}` : `${m} phút`;
+}
+
+/* ================== PARTS RAIL ================== */
+const partsGrid = document.getElementById('partsGrid');
+const watchedSet = new Set(Object.keys(loadProgress()).filter(k => k.startsWith('t')).map(k => +k.slice(1)));
+
+PARTS.forEach(p => {
+  const el = document.createElement('button');
+  el.className = 'pcard';
+  el.dataset.n = p.n;
+  el.innerHTML = `
+    <span class="playicon">▶</span>
+    <div class="num"><span>PART ${String(p.n).padStart(2,'0')}</span>${watchedSet.has(p.n) ? '<span class="watched" title="Đã xem">✓</span>' : ''}</div>
+    <div class="nm">Canto 10 · P${p.n}</div>
+    <div class="meta">${fmtHMS(p.start)} → ${fmtHMS(p.start + p.dur)} · ${fmtDur(p.dur)}</div>`;
+  el.addEventListener('click', () => switchTo(p.n, true));
+  partsGrid.appendChild(el);
+});
+
+/* ================== GLOBAL TIMELINE ================== */
+const globalBar = document.getElementById('globalBar');
+const cursor = document.createElement('div');
+cursor.className = 'cursor';
+PARTS.forEach(p => {
+  const seg = document.createElement('div');
+  seg.className = 'seg';
+  seg.dataset.n = p.n;
+  seg.style.flexGrow = p.dur;
+  seg.title = `Part ${p.n} — ${fmtHMS(p.start)} → ${fmtHMS(p.start + p.dur)}`;
+  seg.innerHTML = '<div class="fill"></div>';
+  seg.addEventListener('click', () => switchTo(p.n, true));
+  globalBar.appendChild(seg);
+});
+globalBar.appendChild(cursor);
+
+function updateTimeline() {
+  const p = PARTS[current - 1];
+  const pct = video.duration ? (video.currentTime / video.duration) : 0;
+  document.querySelectorAll('.seg').forEach(seg => {
+    const n = +seg.dataset.n;
+    seg.classList.toggle('done', n < current || (n === current && pct >= .999));
+    if (n === current) seg.querySelector('.fill').style.width = (pct * 100).toFixed(2) + '%';
+  });
+  const absPos = p.start + video.currentTime;
+  cursor.style.left = (absPos / TOTAL_STREAM * 100).toFixed(3) + '%';
+}
+
+/* ================== SWITCH PART ================== */
+function switchTo(n, andPlay, restoreTime) {
+  if (n < 1 || n > PARTS.length) return;
+  hideNextOverlay();
+  current = n;
+  const p = PARTS[n - 1];
+  video.src = RAW(n);
+  video.dataset.fallback = '0';
+  if (restoreTime) video.currentTime = 0;
+  document.getElementById('chipNow').textContent = `PART ${n}/17`;
+  document.getElementById('nowTitle').textContent = `Canto 10 · Part ${n}`;
+  document.getElementById('timeRange').textContent =
+    `${fmtHMS(p.start)} → ${fmtHMS(p.start + p.dur)} trong livestream`;
+  document.getElementById('prevBtn').disabled = (n === 1);
+  document.getElementById('nextBtn').disabled = (n === PARTS.length);
+  document.querySelectorAll('.pcard').forEach(el => el.classList.toggle('active', +el.dataset.n === n));
+  const prog = loadProgress()['t' + n];
+  const startAt = (restoreTime && prog > 5) ? prog : 0;
+  const onMeta = () => {
+    if (startAt) { video.currentTime = startAt; toast(`▶ Tiếp tục part ${n} tại ${fmtHMS(startAt)}`); }
+    video.removeEventListener('loadedmetadata', onMeta);
+  };
+  video.addEventListener('loadedmetadata', onMeta);
+  if (andPlay) video.play().catch(() => {});
+  saveProgress();
+  history.replaceState(null, '', `?part=${n}`);
+}
+
+/* ================== NEXT OVERLAY ================== */
+const overlay = document.getElementById('nextOverlay');
+function showNextOverlay() {
+  if (current >= PARTS.length) return;
+  document.getElementById('nextNum').textContent = `${current + 1}/17`;
+  overlay.classList.add('show');
+  let cd = 5;
+  document.getElementById('cd').textContent = cd;
+  countdownTimer = setInterval(() => {
+    cd--;
+    if (cd <= 0) { hideNextOverlay(); switchTo(current + 1, true); }
+    else document.getElementById('cd').textContent = cd;
+  }, 1000);
+}
+function hideNextOverlay() {
+  overlay.classList.remove('show');
+  if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
+}
+document.getElementById('goNextBtn').addEventListener('click', () => { hideNextOverlay(); switchTo(current + 1, true); });
+document.getElementById('stayBtn').addEventListener('click', hideNextOverlay);
+
+/* ================== VIDEO EVENTS ================== */
+video.addEventListener('ended', () => {
+  markWatched(current);
+  if (current < PARTS.length) showNextOverlay();
+  else toast('🎉 Hết livestream! Cảm ơn đã xem ~');
+});
+video.addEventListener('error', () => {
+  if (video.dataset.fallback === '0') {
+    video.dataset.fallback = '1';
+    const t = video.currentTime;
+    video.src = REL(current);
+    video.addEventListener('loadedmetadata', () => { video.currentTime = t; }, {once: true});
+    toast('Đang thử nguồn dự phòng (release asset)...');
+    video.play().catch(() => {});
+  }
+});
+video.addEventListener('waiting', () => stage.classList.add('buffering'));
+video.addEventListener('playing', () => stage.classList.remove('buffering'));
+video.addEventListener('canplay', () => stage.classList.remove('buffering'));
+video.addEventListener('timeupdate', updateTimeline);
+setInterval(saveProgress, 5000);
+window.addEventListener('beforeunload', saveProgress);
+
+function markWatched(n) {
+  watchedSet.add(n);
+  const card = document.querySelector(`.pcard[data-n="${n}"] .num`);
+  if (card && !card.querySelector('.watched')) {
+    const w = document.createElement('span');
+    w.className = 'watched'; w.title = 'Đã xem'; w.textContent = '✓';
+    card.appendChild(w);
+  }
+}
+video.addEventListener('timeupdate', () => { if (video.currentTime > 30) markWatched(current); });
+
+/* ================== NAV ================== */
+document.getElementById('prevBtn').addEventListener('click', () => switchTo(current - 1, true));
+document.getElementById('nextBtn').addEventListener('click', () => switchTo(current + 1, true));
+
+/* ================== KEYBOARD ================== */
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  switch (e.key.toLowerCase()) {
+    case ' ': case 'k': e.preventDefault(); video.paused ? video.play() : video.pause(); break;
+    case 'arrowleft': video.currentTime -= 10; break;
+    case 'arrowright': video.currentTime += 10; break;
+    case 'j': video.currentTime -= 30; break;
+    case 'l': video.currentTime += 30; break;
+    case 'n': switchTo(current + 1, true); break;
+    case 'p': switchTo(current - 1, true); break;
+    case 'm': video.muted = !video.muted; break;
+    case 'f': document.fullscreenElement ? document.exitFullscreen() : stage.requestFullscreen().catch(()=>{}); break;
+  }
+});
+
+/* ================== TOAST ================== */
+let toastTimer;
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2600);
+}
+
+/* ================== INIT ================== */
+(function init() {
+  const params = new URLSearchParams(location.search);
+  let startPart = parseInt(params.get('part')) || parseInt((location.hash.match(/part-(\d+)/) || [])[1]) || loadProgress().lastPart || 1;
+  if (startPart < 1 || startPart > PARTS.length) startPart = 1;
+  switchTo(startPart, false);
+  updateTimeline();
+})();
+</script>
+</body>
+</html>
